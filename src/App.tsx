@@ -5,9 +5,16 @@ import Button_2 from './component/button_2';
 import './App.css';
 import { useState } from 'react';
 
+function Welcome(props:any) {
+  return <h1>Hello, {props.name}</h1>;
+
+}
+
+
 const App = () => {
 
   const [count, setCount] = useState(0);
+
 
 
   return (
@@ -15,10 +22,10 @@ const App = () => {
       <div className="App_e">
         <header className="App-header">
         </header>
-        <div>0</div>
+        <div className="aaad">{count}</div>
         <div className="App_d">
-          <Button_1 />
-          <Button_2 />
+          <button onClick={() => setCount(count + 1)}>+</button>
+          <button onClick={() => setCount(count - 1)}>-</button>
         </div>
       </div>
     </div>

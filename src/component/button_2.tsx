@@ -1,10 +1,19 @@
 import React from 'react';
 
 
-function Button_2() {
+const Button_2 = () => {
+
+    const Props = {
+        count: Number
+    }
+
+    const ButtonClick2 = (props:Number) =>  {
+        setCount(props.count-1);
+    }
+
   return (
     <div className="button_2">
-        <button>-</button>
+        <button onClick={ButtonClick2(props)}>-</button>
     </div>
   );
 }

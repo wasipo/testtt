@@ -3,19 +3,19 @@ import { isConstructorDeclaration } from 'typescript';
 
 
 
-const Button_1 = () => {
+const Button_1 = (props:Number) => {
 
     // 親へのパラメータの渡し方が分からない
 
+    const ButtonClick2 = (props: Number) =>  {
+        setCount(props.count-1);
+    } 
 
-    const ButtonClick1 = () =>  {
-        setCount(count+1);
-    }
 
 
     return (
     <div className="button_1">
-        <button onClick={ButtonClick1}>+</button>
+        <button>+</button>
     </div>
     );
 
