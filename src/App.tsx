@@ -1,26 +1,30 @@
 import React from 'react';
 import logo from './logo.svg';
+import Button_1 from './component/button_1';
+import Button_2 from './component/button_2';
 import './App.css';
 
-function App() {
+const App = () => {
+
+  function ButtonClick1() {
+    alert();
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app_r">
+      <div className="App_e">
+        <header className="App-header">
+        </header>
+        <div>0</div>
+        <div className="App_d">
+          <Button_1 />
+          <Button_2 />
+        </div>
+      </div>
     </div>
   );
+
+
 }
 
 export default App;
