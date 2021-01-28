@@ -5,7 +5,7 @@ const Button_2 = (props:any) => {
 
 
     const ButtonClick2:any = (props:any) =>  {
-        return props.count-1;
+        return props.datacount-1;
     }
 
   return (

@@ -21,8 +21,8 @@ const App = () => {
         <div className="App_d">
           {/* <button onClick={() => setCount(count + 1)}>+</button>
           <button onClick={() => setCount(count - 1)}>-</button> */}
-          <Button_1 count={count} />
-          <Button_2 count={count} />
+          <Button_1 datacount={count} />
+          <Button_2 datacount={count} />
         </div>
       </div>
     </div>

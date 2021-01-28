@@ -6,7 +6,7 @@ import { isConstructorDeclaration } from 'typescript';
 const Button_1 = (props:any) => {
 
     const ButtonClick1:any = (props: any) =>  {
-        return props.count+1;
+        return props.datacount+1;
     } 
 
     return (
