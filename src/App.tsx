@@ -3,12 +3,12 @@ import logo from './logo.svg';
 import Button_1 from './component/button_1';
 import Button_2 from './component/button_2';
 import './App.css';
+import { useState } from 'react';
 
 const App = () => {
 
-  function ButtonClick1() {
-    alert();
-  }
+  const [count, setCount] = useState(0);
+
 
   return (
     <div className="app_r">

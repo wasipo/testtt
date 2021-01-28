@@ -1,21 +1,21 @@
 import React, { useState } from 'react';
+import { isConstructorDeclaration } from 'typescript';
 
 
 
+const Button_1 = () => {
 
-function Button_1() {
-
-    const [count, setCount] = useState(0);
+    // 親へのパラメータの渡し方が分からない
 
 
-    function ButtonClick1() {
-        console.log(count+1);
+    const ButtonClick1 = () =>  {
+        setCount(count+1);
     }
 
 
     return (
-    <div className="button_1" onClick={ButtonClick1}>
-        <button>+</button>
+    <div className="button_1">
+        <button onClick={ButtonClick1}>+</button>
     </div>
     );
 
