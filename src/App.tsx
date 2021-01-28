@@ -6,6 +6,7 @@ import './App.css';
 import { useState } from 'react';
 
 
+
 const App = () => {
 
   const [count, setCount] = useState(0);
@@ -21,10 +22,11 @@ const App = () => {
         <div className="App_d">
           {/* <button onClick={() => setCount(count + 1)}>+</button>
           <button onClick={() => setCount(count - 1)}>-</button> */}
-          <Button_1 datacount={count} />
-          <Button_2 datacount={count} />
+          <Button_1 datacount={count} f1={setCount} />
+          <Button_2 datacount={count} f2={setCount} />
         </div>
       </div>
+
     </div>
   );
 
