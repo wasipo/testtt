@@ -5,16 +5,16 @@ import React, { useState } from 'react';
 
 function Button_1() {
 
-    const [count, setCount] = useState();
+    const [count, setCount] = useState(0);
 
 
     function ButtonClick1() {
-        count+1;
+        console.log(count+1);
     }
 
 
     return (
-    <div className="button_1" onClick={ButtonClick1(count)}>
+    <div className="button_1" onClick={ButtonClick1}>
         <button>+</button>
     </div>
     );
