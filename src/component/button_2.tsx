@@ -1,14 +1,11 @@
 import React from 'react';
 
 
-const Button_2 = () => {
+const Button_2 = (props:any) => {
 
-    const Props = {
-        count: Number
-    }
 
-    const ButtonClick2 = (props:Number) =>  {
-        setCount(props.count-1);
+    const ButtonClick2:any = (props:any) =>  {
+        return props.count-1;
     }
 
   return (

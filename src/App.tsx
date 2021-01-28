@@ -5,11 +5,6 @@ import Button_2 from './component/button_2';
 import './App.css';
 import { useState } from 'react';
 
-function Welcome(props:any) {
-  return <h1>Hello, {props.name}</h1>;
-
-}
-
 
 const App = () => {
 
@@ -24,8 +19,10 @@ const App = () => {
         </header>
         <div className="aaad">{count}</div>
         <div className="App_d">
-          <button onClick={() => setCount(count + 1)}>+</button>
-          <button onClick={() => setCount(count - 1)}>-</button>
+          {/* <button onClick={() => setCount(count + 1)}>+</button>
+          <button onClick={() => setCount(count - 1)}>-</button> */}
+          <Button_1 count={count} />
+          <Button_2 count={count} />
         </div>
       </div>
     </div>
