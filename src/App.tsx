@@ -11,7 +11,6 @@ const App = () => {
 
   const [count, setCount] = useState(0);
 
-  const clickIncrement = () => setCount(count + 1);
   const clickDecrement = () => setCount(count - 1);
 
   return (
@@ -23,8 +22,8 @@ const App = () => {
         <div className="App_d">
           {/* <button onClick={() => setCount(count + 1)}>+</button>
           <button onClick={() => setCount(count - 1)}>-</button> */}
-          <Button_1 λ={clickIncrement} />
-          <Button_2 λ={clickDecrement} />
+          <Button_1 λ={setCount} />
+          {/* <Button_2 λ={setCount} /> */}
         </div>
       </div>
 
