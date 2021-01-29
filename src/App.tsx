@@ -10,8 +10,8 @@ import { useState } from 'react';
 const App = () => {
 
   const [count, setCount] = useState(0);
-
-
+  const clickIncrement = () => setCount(count + 1);
+  const clickDecrement = () => setCount(count - 1);
 
   return (
     <div className="app_r">
@@ -22,8 +22,8 @@ const App = () => {
         <div className="App_d">
           {/* <button onClick={() => setCount(count + 1)}>+</button>
           <button onClick={() => setCount(count - 1)}>-</button> */}
-          <Button_1 datacount={count} f1={setCount} />
-          <Button_2 datacount={count} f2={setCount} />
+          <Button_1 λ={clickIncrement} />
+          <Button_2 λ={clickDecrement} />
         </div>
       </div>
 

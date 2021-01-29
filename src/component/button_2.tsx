@@ -1,16 +1,16 @@
 import React from 'react';
 
 
+type SentStatusFromParent = {
+  λ: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
+};
+
 const Button_2 = (props:any) => {
 
 
-    const ButtonClick2:any = (props:any) =>  {
-        return props.datacount-1;
-    }
-
   return (
     <div className="button_2">
-        <button onClick={ButtonClick2(props)}>-</button>
+        <button onClick={props.λ}>-</button>
     </div>
   );
 }
