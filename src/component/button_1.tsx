@@ -7,12 +7,12 @@ type SentStatusFromParent = {
 };
 
 
-const Button_1 = (props: any) => {
+const Button_1 = (props: SentStatusFromParent) => {
 
 
     return (
-        <div className="button_1" onClick={props.λ}>
-            <button>+</button>
+        <div className="button_1">
+            <button onClick={props.λ}>+</button>
         </div>
     );
 

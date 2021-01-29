@@ -5,7 +5,7 @@ type SentStatusFromParent = {
   λ: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
 };
 
-const Button_2 = (props:any) => {
+const Button_2 = (props:SentStatusFromParent) => {
 
 
   return (
