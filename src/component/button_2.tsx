@@ -1,11 +1,12 @@
 import React from 'react';
 
 
-// type SentStatusFromParent = {
-//   λ: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
-// };
+type SentStatusFromParent = {
+  i: number;
+  λ: any;
+};
 
-const Button_2 = (props:any) => {
+const Button_2 = (props:SentStatusFromParent) => {
 
   const clickDecrement = () => props.λ(props.i - 1);
 

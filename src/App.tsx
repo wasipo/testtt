@@ -11,8 +11,6 @@ const App = () => {
 
   const [count, setCount] = useState(0);
 
-  const clickDecrement = () => setCount(count - 1);
-
   return (
     <div className="app_r">
       <div className="App_e">

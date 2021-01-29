@@ -1,13 +1,15 @@
+//@ts-check
+
 import React, { useState } from 'react';
-import { isConstructorDeclaration } from 'typescript';
+import { isConstructorDeclaration, NumericLiteral } from 'typescript';
 
 
-// type SentStatusFromParent = {
-//     λ: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
-// };
+type SentStatusFromParent = {
+    i: number;
+    λ: any;
+};
 
-
-const Button_1 = (props: any) => {
+const Button_1 = (props: SentStatusFromParent) => {
 
     const clickIncrement = () => props.λ(props.i + 1);
 
