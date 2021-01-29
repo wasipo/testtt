@@ -9,8 +9,7 @@ import { isConstructorDeclaration } from 'typescript';
 
 const Button_1 = (props: any) => {
 
-    const count = 0;
-    const clickIncrement = () => props.λ(count + 1);
+    const clickIncrement = () => props.λ(props.i + 1);
 
 
     return (

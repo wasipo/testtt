@@ -20,10 +20,8 @@ const App = () => {
         </header>
         <div className="aaad">{count}</div>
         <div className="App_d">
-          {/* <button onClick={() => setCount(count + 1)}>+</button>
-          <button onClick={() => setCount(count - 1)}>-</button> */}
-          <Button_1 λ={setCount} />
-          {/* <Button_2 λ={setCount} /> */}
+          <Button_1 λ={setCount} i={count} />
+          <Button_2 λ={setCount} i={count} />
         </div>
       </div>
 

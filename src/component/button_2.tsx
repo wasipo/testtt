@@ -7,10 +7,11 @@ import React from 'react';
 
 const Button_2 = (props:any) => {
 
+  const clickDecrement = () => props.λ(props.i - 1);
 
   return (
     <div className="button_2">
-        <button onClick={props.λ}>-</button>
+        <button onClick={clickDecrement}>-</button>
     </div>
   );
 }
